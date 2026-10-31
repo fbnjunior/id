@@ -237,6 +237,204 @@
             </div>
         </div>
     </section>
+	<!-- ================================================================= -->
+<!-- SEÇÃO PWA COM CARROSSEL SLIDER LADO A LADO                        -->
+<!-- ================================================================= -->
+<style>
+    .pwa-section {
+        background-color: #0d2318;
+        color: #ffffff;
+        padding: 60px 0;
+        border-top: 1px solid rgba(16, 185, 129, 0.2);
+        border-bottom: 1px solid rgba(16, 185, 129, 0.2);
+        margin: 40px 0;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .pwa-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    .pwa-title {
+        font-size: 32px;
+        color: #10b981;
+        text-align: center;
+        margin-bottom: 15px;
+        font-weight: 700;
+    }
+
+    .pwa-desc {
+        font-size: 16px;
+        color: #cbd5e1;
+        text-align: center;
+        max-width: 850px;
+        margin: 0 auto 40px auto;
+        line-height: 1.6;
+    }
+
+    .pwa-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+        margin-bottom: 50px;
+    }
+
+    .pwa-card {
+        background: rgba(255, 255, 255, 0.04);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-left: 4px solid #10b981;
+        border-radius: 10px;
+        padding: 28px;
+    }
+
+    .pwa-card h3 {
+        font-size: 18px;
+        color: #ffffff;
+        margin-bottom: 12px;
+        font-weight: 600;
+    }
+
+    .pwa-card p {
+        font-size: 14px;
+        color: #94a3b8;
+        line-height: 1.6;
+    }
+
+    /* ESTILOS DO SLIDER MULTI-IMAGEM LADO A LADO */
+    .slider-wrapper {
+        width: 100%;
+        overflow: hidden;
+        margin-top: 30px;
+        position: relative;
+        padding: 20px 0;
+    }
+
+    .slider-track {
+        display: flex;
+        gap: 20px;
+        width: max-content;
+        animation: scrollSlider 25s linear infinite;
+    }
+
+    .slider-track:hover {
+        animation-play-state: paused; /* Pausa ao passar o mouse */
+    }
+
+    .slider-item {
+        width: 240px;
+        flex-shrink: 0;
+        background: rgba(255, 255, 255, 0.03);
+        border: 2px solid #10b981;
+        border-radius: 16px;
+        padding: 10px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        transition: transform 0.3s ease;
+    }
+
+    .slider-item:hover {
+        transform: translateY(-5px);
+    }
+
+    .slider-item img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        display: block;
+    }
+
+    @keyframes scrollSlider {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-50%);
+        }
+    }
+</style>
+
+<section id="pwa" class="pwa-section">
+    <div class="pwa-container">
+        <h2 class="pwa-title">Desenvolvimento de WebApps Mobile Corporativos &amp; Personalizados</h2>
+        <p class="pwa-desc">Levamos a sua empresa diretamente para a tela inicial dos smartphones dos seus clientes através de aplicações web progressivas de alta performance e usabilidade.</p>
+
+        <div class="pwa-grid">
+            <div class="pwa-card">
+                <h3>O que é um PWA (Progressive Web App)?</h3>
+                <p>É uma tecnologia moderna que combina o melhor dos sites responsivos com a experiência imersiva de um aplicativo nativo. Ele roda direto no navegador, mas pode ser fixado na tela inicial do celular do cliente como um app exclusivo.</p>
+            </div>
+            <div class="pwa-card">
+                <h3>Principais Vantagens Competitivas</h3>
+                <p>🔹 <strong>Instalação Simples:</strong> Sem necessidade de baixar pelas lojas de aplicativos (App Store / Google Play).<br>🔹 <strong>Acesso Rápido:</strong> Ícone personalizado direto na tela principal do usuário.<br>🔹 <strong>Desempenho Otimizado:</strong> Carregamento instantâneo e funcionamento fluido com excelente custo-benefício.</p>
+            </div>
+        </div>
+
+        <!-- SLIDER LADO A LADO COM EFEITO DE ROLAGEM CONTÍNUA -->
+        <div style="text-align: center; margin-bottom: 10px;">
+            <h3 style="font-size: 20px; color: #ffffff;">Cases de Sucesso</h3>
+            <p style="font-size: 13px; color: #94a3b8;">Nossos projetos corporativos e WebApps PWA desenvolvidos:</p>
+        </div>
+
+        <div class="slider-wrapper">
+            <div class="slider-track">
+                <!-- PRIMEIRA SEQUÊNCIA DE IMAGENS -->
+                <div class="slider-item">
+                    <a href="https://applink.com.br/mktdnd" target="_blank">
+                        <img src="image/case1.jpeg" alt="Case ID MKTD">
+                    </a>
+                </div>
+				<div class="slider-item">
+                    <a href="https://applink.com.br/drcamargo" target="_blank">
+                        <img src="image/case2.jpeg" alt="Case ID MKTD">
+                    </a>
+                </div>
+				<div class="slider-item">
+                    <a href="https://applink.com.br/caraguaonline" target="_blank">
+                        <img src="image/case3.jpeg" alt="Case ID MKTD">
+                    </a>
+                </div>
+				<div class="slider-item">
+                    <a href="https://applink.com.br/jrmassoterapeuta" target="_blank">
+                        <img src="image/case4.jpeg" alt="Case ID MKTD">
+                    </a>
+                </div>
+				<div class="slider-item">
+                    <a href="https://applink.com.br/barbabikesapp" target="_blank">
+                        <img src="image/case5.jpeg" alt="Case ID MKTD">
+                    </a>
+                </div>
+
+                <!-- DUPLICAÇÃO PARA O LOOP INFINITO SEM INTERRUPÇÃO -->
+                 <div class="slider-item">
+                    <a href="https://applink.com.br/mktdnd" target="_blank">
+                        <img src="image/case1.jpeg" alt="Case ID MKTD">
+                    </a>
+                </div>
+				<div class="slider-item">
+                    <a href="https://applink.com.br/drcamargo" target="_blank">
+                        <img src="image/case2.jpeg" alt="Case ID MKTD">
+                    </a>
+                </div>
+				<div class="slider-item">
+                    <a href="https://applink.com.br/caraguaonline" target="_blank">
+                        <img src="image/case3.jpeg" alt="Case ID MKTD">
+                    </a>
+                </div>
+				<div class="slider-item">
+                    <a href="https://applink.com.br/jrmassoterapeuta" target="_blank">
+                        <img src="image/case4.jpeg" alt="Case ID MKTD">
+                    </a>
+                </div>
+				<div class="slider-item">
+                    <a href="https://applink.com.br/barbabikesapp" target="_blank">
+                        <img src="image/case5.jpeg" alt="Case ID MKTD">
+                    </a>
+                </div>
+        </div>
+    </div>
+</section>
 
     <!-- SEÇÃO DE TRANSFORMAÇÃO -->
     <section id="transformacao" class="py-20 bg-brand text-white">
